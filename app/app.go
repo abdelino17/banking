@@ -13,28 +13,6 @@ import (
 	"time"
 )
 
-func sanityCheck() {
-
-	//envProps := []string{
-	//	"SERVER_ADDRESS",
-	//	"SERVER_PORT",
-	//	"DB_USER",
-	//	"DB_PASSWD",
-	//	"DB_ADDR",
-	//	"DB_PORT",
-	//	"DB_NAME",
-	//}
-	//for _, k := range envProps {
-	//	if os.Getenv(k) == "" {
-	//		logger.Fatal(fmt.Sprintf("Environment variable %s not defined. Terminating application...", k))
-	//	}
-	//}
-
-	if os.Getenv("SERVER_PORT") == "" || os.Getenv("SERVER_ADDRESS") == "" {
-		logger.Fatal("Environment variables not defined...")
-	}
-}
-
 func Start() {
 
 	sanityCheck()
